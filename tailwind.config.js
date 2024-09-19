@@ -121,6 +121,10 @@ module.exports = {
         "purple-2": "#4D426D",
         "green-1": "#13E0E0",
         "pink-1": "#FDDAD6",
+        "color1": "#ececec", //light gray
+        "color2": "#9fd3c7", //teal
+        "color3": "#385170", //dark gray
+        "color4": "#142d4c", //navy blue
       },
     },
   },

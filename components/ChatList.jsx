@@ -76,7 +76,7 @@ const ChatList = ({ currentChatId }) => {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-
+      <p className="text-color1 text-body-bold text-center font-bold">My Chats</p>
       <div className="chats">
         {chats?.map((chat, index) => (
           <ChatBox

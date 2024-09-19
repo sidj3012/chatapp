@@ -84,7 +84,8 @@ const Contacts = () => {
 
       <div className="contact-bar">
         <div className="contact-list">
-          <p className="text-body-bold">Select or Deselect</p>
+          
+          <p>Select multiple users to create a group or select a person to start chat.</p>
 
           <div className="flex flex-col flex-1 gap-5 overflow-y-scroll custom-scrollbar">
             {contacts.map((user, index) => (
@@ -99,7 +100,7 @@ const Contacts = () => {
                   <RadioButtonUnchecked />
                 )}
                 <img
-                  src={user.profileImage || "/assets/person.jpg"}
+                  src={"/assets/person.jpg"}
                   alt="profile"
                   className="profilePhoto"
                 />
@@ -139,7 +140,7 @@ const Contacts = () => {
             onClick={createChat}
             disabled={selectedContacts.length === 0}
           >
-            FIND OR START A NEW CHAT
+            START A NEW CHAT
           </button>
         </div>
       </div>

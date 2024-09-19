@@ -1,5 +1,4 @@
 "use client"
-
 import { Toaster } from "react-hot-toast"
 
 const ToasterContext = () => {
@@ -7,5 +6,4 @@ const ToasterContext = () => {
     <Toaster />
   )
 }
-
 export default ToasterContext

@@ -3,8 +3,6 @@ import { useState, useEffect } from "react";
 
 import {
     GoogleGenerativeAI,
-    HarmCategory,
-    HarmBlockThreshold,
   } from "@google/generative-ai";
 
 export default function Home(){
@@ -86,29 +84,12 @@ export default function Home(){
      };
 
     const getThemeColors = () => {
-        switch(theme){
-            case "light":
-                return{
-                    primary: "bg-white",
-                    secondary: "bg-gray-100",
-                    accent: "bg-blue-500",
-                    text: "text-gray-800",
-                };
-            case "dark":
-                return{
-                    primary: "bg-white",
-                    secondary: "bg-gray-100",
-                    accent: "bg-blue-500",
-                    text: "text-gray-800",
-                };
-            default :
-                    return{
-                        primary: "bg-white",
-                        secondary: "bg-gray-100",
-                        accent: "bg-blue-500",
-                        text: "text-gray-800",
-                    };
-        }
+        return{
+            primary: "bg-white",
+            secondary: "bg-gray-100",
+            accent: "bg-blue-500",
+            text: "text-gray-800",
+        };
     };
 
     const handleKeyPress = (e) => {
@@ -124,20 +105,7 @@ export default function Home(){
         <div className={`flex flex-col h-screen p-4 ${primary}`}>
             <div className="flex justify-between items-center mb-4">
                 <h1 className={`text-2xl font-bold ${text}`}>Chat with AI</h1>
-                <div className="flex space-x-2">
-                    <label htmlFor="theme" className={`text-sm ${text}`}>
-                        Theme: 
-                    </label>
-                    <select 
-                        id = "theme"
-                        value={theme}
-                        onChange={handleThemeChange}
-                        className={`p-1 rounded-md border ${text}`}
-                    >
-                        <option value="light">Light</option>
-                        <option value="dark">Dark</option>
-                    </select>
-                </div>
+                
             </div>
             <div className={`flex-1 overflow-y-auto ${secondary} rounded-md p-2`}>
                 {messages.map((msg, index) => (

@@ -21,16 +21,31 @@ const ChatBox = ({ chat, currentUser, currentChatId }) => {
       onClick={() => router.push(`/chats/${chat._id}`)}
     >
       <div className="chat-info">
-        
+      {chat?.isGroup ? (
+          <img
+            src={"/assets/group.png"}
+            alt="group-photo"
+            className="profilePhoto"
+          />
+        ) : (
+          <img
+            src={"/assets/person.jpg"}
+            alt="profile-photo"
+            className="profilePhoto"
+          />
+        )}
 
         <div className="flex flex-col gap-1">
           {chat?.isGroup ? (
             <p className="text-base-bold">{chat?.name}</p>
           ) : (
+            
+            
             <p className="text-base-bold">{otherMembers[0]?.username}</p>
+            
           )}
 
-          {!lastMessage && <p className="text-small-bold">Started a chat</p>}
+          {!lastMessage && <p className="text-small-bold">Say Hello</p>}
 
           
             <p

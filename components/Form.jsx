@@ -56,13 +56,12 @@ const Form = ({ type }) => {
     }
   };
 
-  
 
   return (
     <div className="auth">
       <div className="content">
-        <img src="/assets/logo.png" alt="logo" className="logo" />
-
+        {/* <img src="/assets/logo.png" alt="logo" className="logo" /> */}
+        <h1 className="text-heading2-bold text-color3">e-Hato</h1>
         <form className="form" onSubmit={handleSubmit(onSubmit)}>
           {type === "signup" && (
             <div>
@@ -71,11 +70,6 @@ const Form = ({ type }) => {
                   defaultValue=""
                   {...register("username", {
                     required: "Username is required",
-                    validate: (value) => {
-                      if (value.length < 3) {
-                        return "Username must be at least 3 characters";
-                      }
-                    },
                   })}
                   type="text"
                   placeholder="Username"
@@ -111,14 +105,6 @@ const Form = ({ type }) => {
                 defaultValue=""
                 {...register("password", {
                   required: "Password is required",
-                  validate: (value) => {
-                    if (
-                      value.length < 5 ||
-                      !value.match(/[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/)
-                    ) {
-                      return "Password must be at least 5 characters and contain at least one special character";
-                    }
-                  },
                 })}
                 type="password"
                 placeholder="Password"
@@ -131,18 +117,18 @@ const Form = ({ type }) => {
             )}
           </div>
 
-          <button className="button" type="submit">
-            {type === "signup" ? "Join Free" : "Let's Chat"}
+          <button className="button text-color3" type="submit">
+            {type === "signup" ? "Sign Up" : "Log In"}
           </button>
         </form>
 
         {type === "signup" ? (
           <Link href="/" className="link">
-            <p className="text-center">Already have an account? Sign In Here</p>
+            <p className="text-center">Already have an account? Log In Here</p>
           </Link>
         ) : (
           <Link href="/signup" className="link">
-            <p className="text-center">Don't have an account? Register Here</p>
+            <p className="text-center">New to e-Hato? Register Here</p>
           </Link>
         )}
       </div>

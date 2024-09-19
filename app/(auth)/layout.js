@@ -7,14 +7,14 @@ import Provider from "@components/Provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Auth Chatapp",
-  description: "Chatapp built by Siddharth Jain",
+  title: "e-Hato",
+  description: "Chat App built by Siddharth Jain",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-purple-1`}>
+      <body className={`${inter.className} bg-color4`}>
         <Provider>
           <ToasterContext />
           {children}
