@@ -3,11 +3,6 @@
 - **University**: IIT Bhilai
 - **Department**: Computer Science and Engineering
 
-
-# e-Hato Chat Application
-
-![e-Hato Chat Application]
-
 ## Demo
 
 View the live demo at [e-Hato Chat Application Demo](https://chatapp-lac-ten.vercel.app/)
@@ -41,7 +36,7 @@ View the live demo at [e-Hato Chat Application Demo](https://chatapp-lac-ten.ver
 
 ## Installation
 
-Follow these steps to set up the Nexus Chat Application locally:
+Follow these steps to set up the e-Hato Chat Application locally:
 
 1. Clone the repository
 
