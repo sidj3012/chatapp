@@ -30,9 +30,6 @@ View the live demo at [e-Hato Chat Application Demo](https://chatapp-lac-ten.ver
 - **React Hot Toast**: A library for creating visually appealing and informative notifications in your React applications.
 - **React Hook Form**: A library that helps manage forms in React.
 - **Emotion**: A library designed for writing css styles with JavaScript.
-- **React Hook Form**: A library that helps manage forms in React.
-- **React Hook Form**: A library that helps manage forms in React.
-- **React Hook Form**: A library that helps manage forms in React.
 
 ## Installation
 
